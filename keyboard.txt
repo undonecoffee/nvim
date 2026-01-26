@@ -15,8 +15,8 @@ DISPLAY USE ONLY
 |      |     |     |     |     |     |   |     |     |     |     |     | BTC |
                    |LCTRL||||||| SPC |   | ENT |||||||     |
 
-|      |  I  | II  | III |  IV  | term |   | test |     |read |copy |gotop|      |
-|      | AI  |close|open |      | git  |   |  ←   |  ↓  |  ↑  |  →  |     |      | 
+|      |  I  | II  | III |  IV  | term |   |screen|auto |text |obsi |gotop|      |
+|      | AI  |close|open |krita | git  |   |  ←   |  ↓  |  ↑  |  →  |     |      | 
 |      |sxhkd|     |kitty| type |browse|   |school|music|     |     |     |      |
                    |     |      | code |   |      |     |||||||
 

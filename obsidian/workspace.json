@@ -4,53 +4,98 @@
     "type": "split",
     "children": [
       {
-        "id": "5c70f3dbe14f62e3",
+        "id": "470188be58ce444d",
         "type": "tabs",
         "children": [
           {
-            "id": "3be248ff39e0ef7a",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "99-meta/MathDrawings/Standard -> Vertex.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Standard -> Vertex"
-            }
-          },
-          {
-            "id": "2829b63135272ec4",
+            "id": "0cc8d41506c910f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Math/Square Root Functions.md",
+                "file": "01-Knowledge/Humanities/English/Words I got wrong.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Square Root Functions"
+              "title": "Words I got wrong"
             }
           },
           {
-            "id": "78d7c34464290841",
+            "id": "a25bb1a9385ed126",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Math/Quadratics.md",
+                "file": "01-Knowledge/Humanities/History/Areas/United States/1844-1877/Post Civil War.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Quadratics"
+              "title": "Post Civil War"
+            }
+          },
+          {
+            "id": "00f7306281be7111",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-School/03-History/01-Lessons/2.1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2.1"
+            }
+          },
+          {
+            "id": "335bd40f9a6d6ec7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-Knowledge/Humanities/History/Areas/United States/1844-1877/People/The Comanche Empire.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "The Comanche Empire"
+            }
+          },
+          {
+            "id": "b87a65915d55c026",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-Knowledge/Humanities/History/Areas/United States/1844-1877/extentions/Relations with the Native Americans.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Relations with the Native Americans"
+            }
+          },
+          {
+            "id": "4024f22bc076c6bb",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -82,7 +127,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "restor",
+                "query": "tag:/GPIO & Digital I",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,7 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 326.5
   },
   "right": {
     "id": "37afb316d3f12e33",
@@ -195,7 +240,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 346.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -209,51 +254,52 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "zk-prefixer:Create new unique note": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "quiz-generator:Open generator": false
     }
   },
-  "active": "78d7c34464290841",
+  "active": "4024f22bc076c6bb",
   "lastOpenFiles": [
-    "01-Math/Square Root Functions.md",
+    "01-Knowledge/Humanities/History/Areas/United States/1844-1877/People/The Comanche Empire.md",
+    "02-School/03-History/01-Lessons/2.1.md",
+    "01-Knowledge/Humanities/History/Areas/United States/1844-1877/extentions/Relations with the Native Americans.md",
+    "01-Knowledge/Humanities/History/Areas/United States/1844-1877/extentions/Sioux.md",
+    "01-Knowledge/Humanities/History/Areas/United States/1844-1877/Post Civil War.md",
+    "01-Knowledge/Humanities/English/Words I got wrong.md",
+    "01-Knowledge/Humanities/History/Areas/United States/1844-1877/People",
+    "01-Knowledge/Humanities/History/Areas/United States/1844-1877/extentions/Homestead Act of 1862.md",
+    "01-Knowledge/Humanities/History/Areas/United States/1844-1877/extentions/Transcontinental Railroad.md",
+    "01-Knowledge/STEM/Math/Overview.md",
+    "01-Knowledge/Humanities/History/Areas/United States/1844-1877/extentions",
+    "01-Knowledge/Humanities/History/Areas/United States/1844-1877/Events/Gold Rush.md",
+    "02-School/03-History/99-Vocab/Terms/Gold Rush.md",
+    "02-School/03-History/01-Lessons/Fall/4.1.md",
+    "02-School/03-History/01-Lessons/Fall/3.7.md",
+    "02-School/03-History/01-Lessons/Fall/3.9.md",
+    "02-School/03-History/01-Lessons/Fall/3.1.md",
+    "04-Personal/09-speedcubing/PLL.md",
+    "01-Knowledge/Humanities/History/Areas/United States/1890-1945/Events/The Great Depression.md",
     "SCRATCH.md",
-    "99-meta/MathDrawings/Standard -> Vertex.md",
-    "01-Math/Quadratics.md",
-    "99-meta/MathDrawings/squared functions.md",
-    "99-meta/MathDrawings/Untitled.md",
-    "99-meta/MathDrawings/Square Root Function.md",
-    "99-meta/MathDrawings/Quadratic Function.md",
-    "04-History/99-Vocab/Times/Consumer Revolution.md",
-    "99-meta/MathDrawings",
+    "DAY.md",
+    "02-School/03-History/99-Vocab/Terms/Restoration.md",
+    "02-School/03-History/99-Vocab/Terms/proprietary colony.md",
+    "02-School/03-History/99-Vocab/Terms/Columbian Exchange.md",
+    "02-School/03-History/99-Vocab/Documents/Halfway Covenant.md",
+    "02-School/03-History/99-Vocab/Documents/Treaty of Paris.md",
+    "02-School/03-History/99-Vocab/Documents/Charter of the Massachusetts Bay Company.md",
+    "02-School/03-History/99-Vocab/Documents/Fundamental Orders of Connecticut.md",
+    "01-Knowledge/Humanities/History/APUSH",
+    "01-Knowledge/Humanities/History/Areas/United States/1607-1754/Items",
+    "01-Knowledge/Humanities/History/Areas/United States/1607-1754/Places",
+    "01-Knowledge/Humanities/History/Areas/United States/1607-1754/People",
+    "01-Knowledge/Humanities/History/Areas/United States/1607-1754/Themes",
+    "01-Knowledge/Humanities/History/Areas/United States/Timeline",
+    "01-Knowledge/Humanities/History/People",
+    "01-Knowledge/Humanities/History/Locations",
+    "Pasted image 20260119085219.png",
+    "04-Personal/07-Crochet/hat.png",
     "99-meta/Images/Screenshot 2025-09-23 at 19-49-48 APUSHIST A P The Development of Civilization in North America - Page 1 of 11.png",
-    "01-Math/01-Lessons/4.2.md",
-    "04-History/01-Lessons/3.2.md",
-    "04-History/04-Wars/Stono Slave Rebellion.md",
-    "04-History/01-Lessons/3.5.md",
-    "04-History/99-Vocab/Times/Age of Enlightenment.md",
-    "04-History/99-Vocab/Places/Middle Passage.md",
-    "04-History/99-Vocab/ideas/Columbian Exchange.md",
-    "04-History/01-Lessons/3.4.md",
-    "04-History/03-Cultures/Tribes/Pueblo People.md",
-    "04-History/01-Lessons/3.6.md",
-    "04-History/03-Cultures/religions/Christianity/Deism.md",
-    "04-History/01-Lessons/3.7.md",
-    "04-History/03-Cultures/Colonies/English/Connecticut.md",
-    "04-History/99-Vocab/Documents/Treaty of Paris.md",
-    "04-History/99-Vocab/Documents/Mayflower Compact.md",
-    "04-History/99-Vocab/Documents/95 Theses.md",
-    "04-History/99-Vocab/Documents/Charter of the Massachusetts Bay Company.md",
-    "04-History/99-Vocab/Places",
-    "04-History/99-Vocab/ideas",
-    "04-History/99-Vocab/Times",
-    "04-History/99-Vocab/Documents",
-    "02-English/sources/Common Sense",
-    "02-English/sources",
-    "02-English/01-Lessons",
-    "02-English",
-    "05-Crochet/hat.png",
-    "06-Coding/AI Prompts",
+    "03-Physics/99-PDF/U1_L1_Cameron_Wilcox.png",
     "03-Physics/99-PDF/Kinematics_1.png",
-    "03-Physics/99-PDF/Kinematics.png",
-    "03-Physics/99-PDF/U1_L1_Cameron_Wilcox.png"
+    "03-Physics/99-PDF/Kinematics.png"
   ]
 }

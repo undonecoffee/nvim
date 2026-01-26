@@ -50,19 +50,19 @@ return {
         },
     },
 
-    {
-        'm4xshen/autoclose.nvim',
-        config = function()
-            require('autoclose').setup {
-                keys = {
-                    ['<'] = { escape = false, close = true, pair = '<>', disabled_filetypes = {} },
-                },
-                options = {
-                    pair_spaces = true,
-                },
-            }
-        end,
-    },
+    -- {
+    --     'm4xshen/autoclose.nvim',
+    --     config = function()
+    --         require('autoclose').setup {
+    --             keys = {
+    --                 ['<'] = { escape = false, close = true, pair = '<>', disabled_filetypes = {} },
+    --             },
+    --             options = {
+    --                 pair_spaces = true,
+    --             },
+    --         }
+    --     end,
+    -- },
     {
         'L3MON4D3/LuaSnip',
         opts = {

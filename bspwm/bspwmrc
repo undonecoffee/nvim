@@ -8,7 +8,7 @@ bspc config split_ratio 0.52
 bspc config borderless_monocle true
 bspc config gapless_monocle true
 
-bspc monitor -d I II III IV t-term space-code p-btop y-testing o-obsidian b-firefox a-chatgpt g-github v-monkeytype m-music n-school
+bspc monitor -d I II III IV t-term space-code p-btop y-testing o-obsidian a-chatgpt f-krita b-firefox g-github v-monkeytype m-music n-school
 
 bspc rule -a shell desktop='t-term' follow=off
 bspc rule -a nvim desktop='space-code' follow=off
@@ -38,12 +38,13 @@ kitty --class btop bash -lc 'btop; exec bash' &
 # kitty --class btop bash -lc 'gotop --statusbar --rate=2 --color=vice; exec bash' &
 # kitty --class btop bash -lc 'gotop --statusbar --rate=3 --color=vice; exec bash' &
 obsidian &
-firefox --no-remote -P chatgpt --class chatgpt https://chatgpt.com &
+firefox --no-remote -P chatgpt --class chatgpt https://gemini.google.com/u/1/app?pageId=none &
 firefox --no-remote -P github --class github https://github.com/undonecoffee?tab=repositories &
 firefox --no-remote -P monkeytype --class monkeytype https://monkeytype.com &
 firefox --no-remote -P music --class music https://music.youtube.com &
-firefox --no-remote -P school --class school https://desmos.com/calculator &
+firefox --no-remote -P school --class school https://wikipedia.org &
 
 # firefox --no-remote -P testing         --class testing    http://localhost:5173/ &
 # chromium --app=http://localhost:5173/  --name="testing" --class testing
-xsetroot -solid "#16181A"
+# xsetroot -solid "#16181A"
+xsetroot -solid "#000000"

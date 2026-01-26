@@ -1,11 +1,12 @@
 {
   "theme": "obsidian",
-  "accentColor": "#646ebd",
+  "accentColor": "#346fe5",
   "interfaceFontFamily": "JetBrainsMono Nerd Font",
   "textFontFamily": "JetBrainsMono Nerd Font",
   "monospaceFontFamily": "JetBrainsMono Nerd Font",
-  "cssTheme": "Things",
+  "cssTheme": "Retroma",
   "enabledCssSnippets": [
     "Colored Sidebar Items"
-  ]
+  ],
+  "baseFontSize": 15
 }

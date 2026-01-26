@@ -36,12 +36,12 @@ vim.keymap.set('n', '<C-r>', 'U', { noremap = true, silent = true })
 -- vim.keymap.set('v', '(', 'oi(gvola)gvl', { noremap = true, silent = true })
 -- vim.keymap.set('v', '[', 'oi[gvola]gvl', { noremap = true, silent = true })
 
-vim.keymap.set('v', '"', 'di""hp', { noremap = true, silent = true })
-vim.keymap.set('v', '`', 'di``hp', { noremap = true, silent = true })
-vim.keymap.set('v', "'", "di''hp", { noremap = true, silent = true })
-vim.keymap.set('v', '{', 'di{}hp', { noremap = true, silent = true })
-vim.keymap.set('v', '(', 'di()hp', { noremap = true, silent = true })
-vim.keymap.set('v', '[', 'di[]hp', { noremap = true, silent = true })
+-- vim.keymap.set('v', '"', 'di""hp', { noremap = true, silent = true })
+-- vim.keymap.set('v', '`', 'di``hp', { noremap = true, silent = true })
+-- vim.keymap.set('v', "'", "di''hp", { noremap = true, silent = true })
+-- vim.keymap.set('v', '{', 'di{}hp', { noremap = true, silent = true })
+-- vim.keymap.set('v', '(', 'di()hp', { noremap = true, silent = true })
+-- vim.keymap.set('v', '[', 'di[]hp', { noremap = true, silent = true })
 --
 -- vim.keymap.set('n', 'zb', function()
 --     vim.cmd 'CodeCompanionChat'
