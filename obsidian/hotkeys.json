@@ -8,14 +8,6 @@
     }
   ],
   "editor:open-search": [],
-  "insert-template": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Y"
-    }
-  ],
   "editor:toggle-fold": [
     {
       "modifiers": [
@@ -64,6 +56,23 @@
         "Shift"
       ],
       "key": "E"
+    }
+  ],
+  "templater-obsidian:create-new-note-from-template": [],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Y"
+    }
+  ],
+  "editor:toggle-spellcheck": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
     }
   ]
 }

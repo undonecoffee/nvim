@@ -1,50 +1,37 @@
 #!/bin/sh
-# TMP_IMG="~/Downloads/temp.png"
-sxhkd &
-xrandr --output DP-0 --mode 1920x1080 --rate 165
 bspc config border_width 0
 bspc config window_gap 0
 bspc config split_ratio 0.52
 bspc config borderless_monocle true
 bspc config gapless_monocle true
 
-bspc monitor -d I II III IV t-term space-code p-btop y-testing o-obsidian a-chatgpt f-krita b-firefox g-github v-monkeytype m-music n-school
+xrandr --output HDMI-0 --mode 2560x1440 --rate 60 --rotate left --pos 0x0 \
+    --output DP-0 --mode 1920x1080 --rate 165 --primary --pos 1440x1100
 
-bspc rule -a shell desktop='t-term' follow=off
-bspc rule -a nvim desktop='space-code' follow=off
-bspc rule -a btop desktop='p-btop' follow=off
-bspc rule -a testing desktop='y-testing' follow=off
+bspc monitor HDMI-0 -r
+bspc wm -a HDMI-0_TOP 1440x860+0+0
+bspc wm -a HDMI-0_BOT 1440x1700+0+860
+
+# bspc monitor DP-0 -d q-main e-obs r-misc t-term y-youtube o-obsidian p-system a-ai d-discord f-krita g-github b-browser n-school m-music space-code
+# bspc monitor HDMI-0 -d e-obs o-obsidian p-system a-ai d-discord g-github m-music
+bspc monitor DP-0 -d q-main r-misc t-term y-youtube f-krita b-browser n-school space-code
+bspc monitor HDMI-0_BOT -d e-obs o-obsidian a-ai g-github d-discord
+bspc monitor HDMI-0_TOP -d p-system m-music
+
+bspc rule -a obs desktop='e-obs' follow=off
+bspc rule -a term desktop='t-term' follow=off
+bspc rule -a FreeTube desktop='y-youtube' follow=off
 bspc rule -a obsidian desktop='o-obsidian' follow=off
-bspc rule -a firefox desktop='b-firefox' follow=off
-bspc rule -a chatgpt desktop='a-chatgpt' follow=off
+bspc rule -a system desktop='p-system' follow=off
+bspc rule -a ai desktop='a-ai' follow=off
+bspc rule -a discord desktop='d-discord' follow=off
+bspc rule -a krita desktop='f-krita' follow=off
 bspc rule -a github desktop='g-github' follow=off
-bspc rule -a monkeytype desktop='v-monkeytype' follow=off
-bspc rule -a music desktop='m-music' follow=off
+bspc rule -a browser desktop='b-browser' follow=off
 bspc rule -a school desktop='n-school' follow=off
+bspc rule -a music desktop='m-music' follow=off
+bspc rule -a nvim desktop='space-code' follow=off
 
-unclutter -idle 0.7 &
-picom --experimental-backends &
-
-bspc node -d "b-firefox"
-firefox --no-remote -P default-release --class firefox &
-
-sleep 2
-kitty --class shell bash -lc 'tmux; exec bash' &
-kitty --class nvim bash -lc 'tmux; exec bash' &
-kitty --class btop bash -lc 'btop; exec bash' &
-kitty --class btop bash -lc 'btop; exec bash' &
-kitty --class btop bash -lc 'btop; exec bash' &
-# kitty --class btop bash -lc 'gotop --statusbar --rate=1 --color=vice; exec bash' &
-# kitty --class btop bash -lc 'gotop --statusbar --rate=2 --color=vice; exec bash' &
-# kitty --class btop bash -lc 'gotop --statusbar --rate=3 --color=vice; exec bash' &
-obsidian &
-firefox --no-remote -P chatgpt --class chatgpt https://gemini.google.com/u/1/app?pageId=none &
-firefox --no-remote -P github --class github https://github.com/undonecoffee?tab=repositories &
-firefox --no-remote -P monkeytype --class monkeytype https://monkeytype.com &
-firefox --no-remote -P music --class music https://music.youtube.com &
-firefox --no-remote -P school --class school https://wikipedia.org &
-
-# firefox --no-remote -P testing         --class testing    http://localhost:5173/ &
-# chromium --app=http://localhost:5173/  --name="testing" --class testing
-# xsetroot -solid "#16181A"
-xsetroot -solid "#000000"
+$DOTFILES/bspwm/startup.sh &
+# If that file doesn't load i load the hokey dameon here (it has saved me a few times)
+sxhkd &

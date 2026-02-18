@@ -4,7 +4,12 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "Date": "text",
-    "Created": "text",
-    "Related": "text"
+    "Created": "datetime",
+    "Related": "text",
+    "Updated": "datetime",
+    "Class": "multitext",
+    "Source": "multitext",
+    "creation date": "datetime",
+    "modification date": "date"
   }
 }

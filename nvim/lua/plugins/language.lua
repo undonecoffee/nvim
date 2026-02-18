@@ -6,30 +6,30 @@
 -- treesitter
 -- luasnip
 return {
-    { 'norcalli/nvim-colorizer.lua' },
+    { "norcalli/nvim-colorizer.lua" },
 
     {
-        'sylvanfranklin/omni-preview.nvim',
+        "sylvanfranklin/omni-preview.nvim",
         opts = {},
         dependencies = {
             -- Typst
-            { 'chomosuke/typst-preview.nvim', lazy = true },
+            { "chomosuke/typst-preview.nvim", lazy = true },
             -- CSV
-            { 'hat0uma/csvview.nvim', lazy = true },
-            { 'toppair/peek.nvim', lazy = true, build = 'deno task --quiet build:fast' },
-            { 'iamcco/markdown-preview.nvim', lazy = true },
+            { "hat0uma/csvview.nvim", lazy = true },
+            { "toppair/peek.nvim", lazy = true, build = "deno task --quiet build:fast" },
+            { "iamcco/markdown-preview.nvim", lazy = true },
         },
         config = function()
-            require('omni-preview').setup()
-            require('peek').setup { app = 'browser' }
+            require("omni-preview").setup()
+            require("peek").setup({ app = "browser" })
         end,
     },
     {
-        'folke/flash.nvim',
-        event = 'VeryLazy',
+        "folke/flash.nvim",
+        event = "VeryLazy",
         opts = {
-            search = { mode = 'exact' },
-            jump = { register = false, pos = 'end' },
+            search = { mode = "exact" },
+            jump = { register = false, pos = "end" },
             label = { uppercase = false },
             rainbow = { enabled = true },
             highlight = { backdrop = false, matches = false },
@@ -40,12 +40,12 @@ return {
 
         keys = {
             {
-                's',
-                mode = { 'n', 'v', 'x', 'o' },
+                "s",
+                mode = { "n", "v", "x", "o" },
                 function()
-                    require('flash').jump()
+                    require("flash").jump()
                 end,
-                desc = 'Flash',
+                desc = "Flash",
             },
         },
     },
@@ -64,19 +64,32 @@ return {
     --     end,
     -- },
     {
-        'L3MON4D3/LuaSnip',
+        "L3MON4D3/LuaSnip",
         opts = {
             enable_autosnippets = true,
         },
     },
     {
 
-        'nvim-treesitter/nvim-treesitter',
-        build = ':TSUpdate',
-        main = 'nvim-treesitter.configs',
+        "nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate",
+        main = "nvim-treesitter.configs",
         -- See `:help nvim-treesitter`
         opts = {
-            ensure_installed = { 'bash', 'javascript', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
+            ensure_installed = {
+                "bash",
+                "javascript",
+                "c",
+                "diff",
+                "html",
+                "lua",
+                "luadoc",
+                "markdown",
+                "markdown_inline",
+                "query",
+                "vim",
+                "vimdoc",
+            },
             -- Autoinstall languages that are not installed
             auto_install = true,
             highlight = {
@@ -85,17 +98,17 @@ return {
         },
     },
     {
-        'stevearc/conform.nvim',
-        event = { 'BufWritePre' },
-        cmd = { 'ConformInfo' },
+        "stevearc/conform.nvim",
+        event = { "BufWritePre" },
+        cmd = { "ConformInfo" },
         keys = {
             {
-                '<leader>t',
+                "<leader>t",
                 function()
-                    require('conform').format { async = true, lsp_format = 'fallback' }
+                    require("conform").format({ async = true, lsp_format = "fallback" })
                 end,
-                mode = '',
-                desc = '[F]ormat buffer',
+                mode = "",
+                desc = "[F]ormat buffer",
             },
         },
         opts = {
@@ -103,23 +116,31 @@ return {
             format_on_save = function(bufnr)
                 return {
                     timeout_ms = 500,
-                    lsp_format = 'fallback',
+                    lsp_format = "fallback",
                 }
             end,
             formatters_by_ft = {
-                lua = { 'stylua' },
-                javascript = { 'dprint' },
-                sh = { 'shfmt' },
+                lua = { "stylua" },
+                javascript = { "dprint" },
+                sh = { "shfmt" },
+            },
+            formatters = {
+                stylua = {
+                    prepend_args = {
+                        "--config-path",
+                        vim.fn.expand("$DOTFILES/formatters/stylua.toml"),
+                    },
+                },
             },
         },
     },
     { -- Autocompletion
-        'saghen/blink.cmp',
-        event = 'VimEnter',
-        version = '1.*',
+        "saghen/blink.cmp",
+        event = "VimEnter",
+        version = "1.*",
         dependencies = {
-            'L3MON4D3/LuaSnip',
-            'folke/lazydev.nvim',
+            "L3MON4D3/LuaSnip",
+            "folke/lazydev.nvim",
         },
         opts = {
             keymap = {
@@ -144,14 +165,14 @@ return {
                 -- <c-k>: Toggle signature help
                 --
                 -- See :h blink-cmp-config-keymap for defining your own keymap
-                preset = 'enter',
+                preset = "enter",
 
                 -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
                 --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
             },
 
             appearance = {
-                nerd_font_variant = 'mono',
+                nerd_font_variant = "mono",
             },
 
             completion = {
@@ -167,27 +188,27 @@ return {
             },
 
             sources = {
-                default = { 'lsp', 'path', 'snippets', 'lazydev' },
+                default = { "lsp", "path", "snippets", "lazydev" },
                 providers = {
-                    lazydev = { module = 'lazydev.integrations.blink', score_offset = 100 },
+                    lazydev = { module = "lazydev.integrations.blink", score_offset = 100 },
                 },
             },
 
             -- snippets = { preset = 'luasnip' },
-            fuzzy = { implementation = 'lua' },
+            fuzzy = { implementation = "lua" },
             signature = { enabled = true },
         },
     },
     {
         -- Main LSP Configuration
-        'neovim/nvim-lspconfig',
+        "neovim/nvim-lspconfig",
         dependencies = {
             -- NOTE: `opts = {}` is the same as calling `require('mason').setup({})`
-            { 'mason-org/mason.nvim', opts = {} },
-            'mason-org/mason-lspconfig.nvim',
-            'WhoIsSethDaniel/mason-tool-installer.nvim',
+            { "mason-org/mason.nvim", opts = {} },
+            "mason-org/mason-lspconfig.nvim",
+            "WhoIsSethDaniel/mason-tool-installer.nvim",
 
-            'saghen/blink.cmp',
+            "saghen/blink.cmp",
         },
         config = function()
             -- vim.api.nvim_create_autocmd('LspAttach', {
@@ -213,7 +234,7 @@ return {
             --  By default, Neovim doesn't support everything that is in the LSP specification.
             --  When you add blink.cmp, luasnip, etc. Neovim now has *more* capabilities.
             --  So, we create new capabilities with blink.cmp, and then broadcast that to the servers.
-            local capabilities = require('blink.cmp').get_lsp_capabilities()
+            local capabilities = require("blink.cmp").get_lsp_capabilities()
 
             -- Enable the following language servers
             --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
@@ -253,9 +274,9 @@ return {
             -- You can add other tools here that you want Mason to install
             -- for you, so that they are available from within Neovim.
             local ensure_installed = vim.tbl_keys(servers or {})
-            require('mason-tool-installer').setup { ensure_installed = ensure_installed }
+            require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
-            require('mason-lspconfig').setup {
+            require("mason-lspconfig").setup({
                 ensure_installed = {}, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
                 automatic_installation = false,
                 handlers = {
@@ -264,11 +285,11 @@ return {
                         -- This handles overriding only values explicitly passed
                         -- by the server configuration above. Useful when disabling
                         -- certain features of an LSP (for example, turning off formatting for ts_ls)
-                        server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-                        require('lspconfig')[server_name].setup(server)
+                        server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
+                        require("lspconfig")[server_name].setup(server)
                     end,
                 },
-            }
+            })
         end,
     },
 }

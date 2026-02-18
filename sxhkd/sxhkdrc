@@ -1,27 +1,19 @@
-super + d
-    dmenu_run
-super + y
-    bash $PASSWORDS/bash/imageGrab/imageGrab.sh
-super + u
-    bash $PASSWORDS/bash/imageGrab/MoveImage.sh
-super + i
-    bash ~/passwords/bash/copyText.sh
 super + c
-    kitty
+    dmenu_run
+super + u
+    spectacle
 super + at
-    bash $DOTFILES/setTheme.sh black
-super + comma
-    bash $DOTFILES/setTheme.sh dark
+    kitty
 
 super + alt + q 
     bspc quit
 super + alt + x 
-    systemctl suspend
+    reboot
 super + alt + r
     bspc wm -r
 super + z
     bash $DOTFILES/sxhkd/startsxhkd.sh
-super + s
+super + w
     bspc node -c
 super + apostrophe
     pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -29,66 +21,70 @@ super + slash
     pactl set-sink-volume @DEFAULT_SINK@ -5%
 
 super + q
-    bspc desktop -f I
-super + w
-    bspc desktop -f II
+    bspc desktop -f "q-main"
 super + e
-    bspc desktop -f III
+    bspc desktop -f "e-obs"
 super + r
-    bspc desktop -f IV
+    bspc desktop -f "r-misc"
 super + t
     bspc desktop -f "t-term"
+super + y
+    bspc desktop -f "y-youtube"
 super + o
     bspc desktop -f "o-obsidian"
 super + p
-    bspc desktop -f "p-btop"
+    bspc desktop -f "p-system"
 super + a
-    bspc desktop -f "a-chatgpt"
+    bspc desktop -f "a-ai"
+super + d
+    bspc desktop -f "d-discord"
 super + f
     bspc desktop -f "f-krita"
-super + b
-    bspc desktop -f "b-firefox"
 super + g
     bspc desktop -f "g-github"
-super + v
-    bspc desktop -f "v-monkeytype"
-super + m
-    bspc desktop -f "m-music"
+super + b
+    bspc desktop -f "b-browser"
 super + n
     bspc desktop -f "n-school"
+super + m
+    bspc desktop -f "m-music"
 super + space
     bspc desktop -f "space-code"
 
 super + shift + q
-    bspc node -d I
-super + shift + w
-    bspc node -d II
+    bspc node -d "q-main"
 super + shift + e
-    bspc node -d III
+    bspc node -d "e-obs"
 super + shift + r
-    bspc node -d IV
-super + shift + p
-    bspc node -d "p-btop"
+    bspc node -d "r-misc"
 super + shift + t
     bspc node -d "t-term"
+super + shift + y
+    bspc node -d "y-youtube"
 super + shift + o
     bspc node -d "o-obsidian"
+super + shift + p
+    bspc node -d "p-system"
 super + shift + a
-    bspc node -d "a-chatgpt"
+    bspc node -d "a-ai"
+super + shift + d
+    bspc node -d "d-discord"
 super + shift + f
     bspc node -d "f-krita"
-super + shift + b
-    bspc node -d "b-firefox"
 super + shift + g
     bspc node -d "g-github"
-super + shift + v
-    bspc node -d "v-monkeytype"
-super + shift + m
-    bspc node -d "m-music"
+super + shift + b
+    bspc node -d "b-browser"
 super + shift + n
     bspc node -d "n-school"
+super + shift + m
+    bspc node -d "m-music"
 super + shift + space
     bspc node -d "space-code"
+
+  
+
+
 
 super + h
     bspc node -f west
