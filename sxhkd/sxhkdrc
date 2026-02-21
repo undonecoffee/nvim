@@ -15,10 +15,17 @@ super + z
     bash $DOTFILES/sxhkd/startsxhkd.sh
 super + w
     bspc node -c
+
 super + apostrophe
     pactl set-sink-volume @DEFAULT_SINK@ +5%
 super + slash
     pactl set-sink-volume @DEFAULT_SINK@ -5%
+super + BackSpace
+    playerctl play-pause
+super + Alt_L
+    playerctl next
+super + period
+    playerctl previous
 
 super + q
     bspc desktop -f "q-main"
@@ -121,3 +128,30 @@ super + ctrl + j
     bspc node -z top 0 -20
 super + ctrl + k
     bspc node -z bottom 0 -20
+
+
+# Fallback triggers without Super (in case firmware drops modifiers)
+
+F10
+    /home/cameron/passwords/bash/orbit/test.sh main-toggle
+
+F6
+    /home/cameron/passwords/bash/orbit/test.sh google on
+@F6
+    /home/cameron/passwords/bash/orbit/test.sh google off
+
+F7
+    /home/cameron/passwords/bash/orbit/test.sh paste on
+@F7
+    /home/cameron/passwords/bash/orbit/test.sh paste off
+
+F9
+    /home/cameron/passwords/bash/orbit/test.sh to-do on
+@F9
+    /home/cameron/passwords/bash/orbit/test.sh to-do off
+
+F8
+    /home/cameron/passwords/bash/orbit/test.sh task on
+@F8
+    /home/cameron/passwords/bash/orbit/test.sh task off
+

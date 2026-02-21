@@ -2,19 +2,20 @@
 $DOTFILES/bspwm/mouseWarp.sh &
 # picom --experimental-backends &
 picom &
-xhost +local:
+xhost +local
 # xsetroot -solid "#66bb00"
-feh --bg-fill $DOTFILES/wallpapers/landscape2.png &
+# feh --bg-fill $DOTFILES/wallpapers/landscape2.png &
 $DOTFILES/bash/tabletSettings.sh &
-unclutter -idle 0.7 &
+# unclutter -idle 0.7 &
+# xbanish &
 
 bspc node -d "b-browser"
 firefox --no-remote -P default-release --class browser &
 
-sleep 2
+# sleep 2
 
-kitty --class nvim bash -c '$DOTFILES/bspwm/tmuxInit nvim' &
-kitty --class term bash -c '$DOTFILES/bspwm/tmuxInit term' &
+kitty --class nvim bash -c '$DOTFILES/bspwm/tmuxInit.sh nvim' &
+kitty --class term bash -c '$DOTFILES/bspwm/tmuxInit.sh term' &
 kitty --class music bash -lc 'btop --update 500; exec bash' &
 obsidian &
 freetube &

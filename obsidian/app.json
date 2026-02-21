@@ -3,7 +3,7 @@
   "promptDelete": false,
   "showLineNumber": false,
   "readableLineLength": false,
-  "spellcheck": true,
+  "spellcheck": false,
   "foldIndent": true,
   "alwaysUpdateLinks": true,
   "showIndentGuide": false,

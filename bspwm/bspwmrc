@@ -9,8 +9,8 @@ xrandr --output HDMI-0 --mode 2560x1440 --rate 60 --rotate left --pos 0x0 \
     --output DP-0 --mode 1920x1080 --rate 165 --primary --pos 1440x1100
 
 bspc monitor HDMI-0 -r
-bspc wm -a HDMI-0_TOP 1440x860+0+0
-bspc wm -a HDMI-0_BOT 1440x1700+0+860
+bspc wm -a HDMI-0_TOP 1440x560+0+0
+bspc wm -a HDMI-0_BOT 1440x2000+0+560
 
 # bspc monitor DP-0 -d q-main e-obs r-misc t-term y-youtube o-obsidian p-system a-ai d-discord f-krita g-github b-browser n-school m-music space-code
 # bspc monitor HDMI-0 -d e-obs o-obsidian p-system a-ai d-discord g-github m-music
@@ -33,5 +33,10 @@ bspc rule -a music desktop='m-music' follow=off
 bspc rule -a nvim desktop='space-code' follow=off
 
 $DOTFILES/bspwm/startup.sh &
-# If that file doesn't load i load the hokey dameon here (it has saved me a few times)
+# # If that file doesn't load i load the hokey dameon here (it has saved me a few times)
 sxhkd &
+
+# kitty --class nvim bash -c '$DOTFILES/bspwm/tmuxInit.sh nvim' &
+# kitty --class term bash -c '$DOTFILES/bspwm/tmuxInit.sh term' &
+# kitty --class music bash -lc 'btop --update 500; exec bash' &
+# firefox --no-remote -P music --class music 'https://music.youtube.com/watch?v=gUPGLYYT4bc&list=RDAMVMgUPGLYYT4bc' &
