@@ -8,22 +8,22 @@
 return {
     { "norcalli/nvim-colorizer.lua" },
 
-    {
-        "sylvanfranklin/omni-preview.nvim",
-        opts = {},
-        dependencies = {
-            -- Typst
-            { "chomosuke/typst-preview.nvim", lazy = true },
-            -- CSV
-            { "hat0uma/csvview.nvim", lazy = true },
-            { "toppair/peek.nvim", lazy = true, build = "deno task --quiet build:fast" },
-            { "iamcco/markdown-preview.nvim", lazy = true },
-        },
-        config = function()
-            require("omni-preview").setup()
-            require("peek").setup({ app = "browser" })
-        end,
-    },
+    -- {
+    --     "sylvanfranklin/omni-preview.nvim",
+    --     opts = {},
+    --     dependencies = {
+    --         -- Typst
+    --         { "chomosuke/typst-preview.nvim", lazy = true },
+    --         -- CSV
+    --         { "hat0uma/csvview.nvim", lazy = true },
+    --         { "toppair/peek.nvim", lazy = true, build = "deno task --quiet build:fast" },
+    --         { "iamcco/markdown-preview.nvim", lazy = true },
+    --     },
+    --     config = function()
+    --         require("omni-preview").setup()
+    --         require("peek").setup({ app = "browser" })
+    --     end,
+    -- },
     {
         "folke/flash.nvim",
         event = "VeryLazy",

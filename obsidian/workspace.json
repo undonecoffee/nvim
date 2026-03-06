@@ -23,52 +23,37 @@
             }
           },
           {
-            "id": "bc85faf4e4e7b9e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TO-DO.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "TO-DO"
-            }
-          },
-          {
             "id": "04098484aeb0ae76",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-Orbit/Ideas/Overview.md",
+                "file": "Ideas.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Overview"
+              "title": "Ideas"
             }
           },
           {
-            "id": "4076b4d4487db804",
+            "id": "a32d063fdde2e3e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-Coding/Linux/Downloads.md",
-                "mode": "source",
+                "file": "TO-TO Extended.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Downloads"
+              "title": "TO-TO Extended"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -120,19 +105,8 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
-          {
-            "id": "3112783123397cf9",
-            "type": "leaf",
-            "state": {
-              "type": "tagfolder-view",
-              "state": {},
-              "icon": "stacked-levels",
-              "title": "Tag Folder"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -243,40 +217,40 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "4076b4d4487db804",
+  "active": "04098484aeb0ae76",
   "lastOpenFiles": [
+    "Y-TO-DO.md",
+    "Ideas.md",
+    "TO-DO Extended.md",
+    "03-Coding/Linux/Downloads.md",
+    "03-Coding/Bash/Bash Cheatsheet.md",
+    "03-Coding/Linux/Cheetsheet.md",
+    "SCRATCH.md",
+    "00-archive/Algebra 2a Fall 2025/Square Root Functions.md",
+    "00-archive/Algebra 2a Fall 2025/Quadratics.md",
+    "00-archive/Algebra 2a Fall 2025/Inverse Variation.md",
+    "00-archive/Algebra 2a Fall 2025/ALL.md",
+    "Square Root Function.md",
+    "02-School/02-English/Lessons/2.1.md",
+    "02-School/02-English/sources/Speech of Patrick Henry.md",
+    "02-School/02-English/sources/Common Sense/Of the Present Ability of America; with some Miscellaneous Reflections.md",
+    "02-School/02-English/sources/Common Sense/Thoughts on the Present State of American Affairs.md",
+    "02-School/02-English/Words.md",
+    "04-Personal/Speedcubing/PLL.md",
+    "01-Knowledge/Other.md",
     "05-Orbit/Ideas/Overview.md",
+    "01-Knowledge/Humanities/English/Words I got wrong.md",
+    "03-Coding/AI Prompts/DEBUG.md",
+    "04-Personal/Projects/TO-DO App.md",
+    "04-Personal/Projects/Transcripter.md",
     "05-Orbit/Ideas/AI Interaction Protocol.md",
     "05-Orbit/Ideas/Custom AI Interface.md",
-    "05-Orbit/Ideas/Orbit Idea Incubator.md",
-    "04-Personal/Projects/Overview.md",
-    "03-Coding/Bash/Cheatsheet.md",
-    "TO-DO.md",
-    "SCRATCH.md",
-    "04-Personal/Projects/Transcripter.md",
-    "04-Personal/Ideas/Transcriber.md",
-    "04-Personal/Ideas/TO-DO App.md",
     "04-Personal/Projects",
     "03-Coding/Bash/P",
-    "03-Coding/Linux/Cheetsheet.md",
-    "05-Orbit/Plan/AI Interaction Protocol.md",
-    "03-Coding/Linux/Downloads.md",
-    "05-Orbit/README.md",
     "05-Orbit/Plan",
-    "TO-TO Extended.md",
-    "05-Orbit/Ideas.md",
     "05-Orbit/Ideas",
     "05-Orbit",
-    "03-Coding/AI Prompts/Saves/clawd.md",
-    "04-Personal/Speedcubing/PLL.md",
-    "03-Coding/AI Prompts/Saves/Dopamine Levels.md",
-    "Untitled.md",
-    "01-Knowledge/Humanities/English/Words I got wrong.md",
-    "03-Coding/Homelab/Media.md",
-    "03-Coding/AI Prompts/Learning/Geography.md",
-    "03-Coding/AI Prompts/Saves/Learning.md",
     "03-Coding/AI Prompts/Learning",
-    "01-Knowledge/Humanities/Geography/Things to Learn.md",
     "03-Coding/Homelab/Media",
     "03-Coding/Homelab",
     "03-Coding/AI Prompts/Saves",

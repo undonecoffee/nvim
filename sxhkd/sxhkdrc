@@ -2,6 +2,8 @@ super + c
     dmenu_run
 super + u
     spectacle
+super + v
+    rofi -modi "clipboard:greenclip print" -show clipboard
 super + at
     kitty
 
@@ -26,6 +28,8 @@ super + Alt_L
     playerctl next
 super + period
     playerctl previous
+super + comma
+    playerctl position 10+
 
 super + q
     bspc desktop -f "q-main"
@@ -132,26 +136,28 @@ super + ctrl + k
 
 # Fallback triggers without Super (in case firmware drops modifiers)
 
+
 F10
-    /home/cameron/passwords/bash/orbit/test.sh main-toggle
+    /home/cameron/passwords/bash/speech-to-text/recorder.sh idea on
+@F10
+    /home/cameron/passwords/bash/speech-to-text/recorder.sh idea off
 
 F6
-    /home/cameron/passwords/bash/orbit/test.sh google on
+    /home/cameron/passwords/bash/speech-to-text/recorder.sh google on
 @F6
-    /home/cameron/passwords/bash/orbit/test.sh google off
+    /home/cameron/passwords/bash/speech-to-text/recorder.sh google off
 
 F7
-    /home/cameron/passwords/bash/orbit/test.sh paste on
+    /home/cameron/passwords/bash/speech-to-text/recorder.sh paste on
 @F7
-    /home/cameron/passwords/bash/orbit/test.sh paste off
+    /home/cameron/passwords/bash/speech-to-text/recorder.sh paste off
 
 F9
-    /home/cameron/passwords/bash/orbit/test.sh to-do on
+    /home/cameron/passwords/bash/speech-to-text/recorder.sh to-do on
 @F9
-    /home/cameron/passwords/bash/orbit/test.sh to-do off
+    /home/cameron/passwords/bash/speech-to-text/recorder.sh to-do off
 
 F8
-    /home/cameron/passwords/bash/orbit/test.sh task on
+    /home/cameron/passwords/bash/speech-to-text/recorder.sh task on
 @F8
-    /home/cameron/passwords/bash/orbit/test.sh task off
-
+    /home/cameron/passwords/bash/speech-to-text/recorder.sh task off
